@@ -3,21 +3,47 @@
   <head>
     <title>HyperTextOS</title>
     <style>
+      body {
+        font-family: sans-serif;
+      }
+      
       .window {
         border: 1px solid gray;
         background: antiquewhite;
       }
 
-      .title-bar {
+      .title {
         background: linear-gradient(darkgray, lightgray);
         border-bottom: 1px solid gray;
       }
+      
+      .title .text {
+        float: right;
+      }
+      
+      .title .buttons {
+        text-align: center;
+        float: left;
+        border-radius: 0 15px 15px 0;
+      }
+
+      button .close {
+        background: red;
+        border: 1px solid gray; 
+      }
+      .title-buttons
     </style>
   </head>
   <body>
     <div class="window">
-      <div class="title-bar">
-        aaaaa
+      <div class="title">
+        <div class="title text">
+          aaaa
+        </div>
+        <div class="title buttons">
+          <button class="close">x</button>
+          <button>-</button>
+        </div>
       </div>
       AaBbCcDdEeFf
     </div>
