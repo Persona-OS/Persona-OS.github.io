@@ -6,13 +6,11 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
       $( "#minesweeper-close" ).click(function() {
-        $( "#minesweeper" ).hide( "fold", 1000 );
+        $( "#minesweeper" ).hide();
       });
 
       $( function(){
-        $( "#minesweeper" ).draggable({
-          handle: "#minesweeper-title"
-        });
+        $( "#minesweeper" ).draggable({handle: "#minesweeper-title"});
       })
     </script>
   </head>
@@ -63,34 +61,5 @@
         text-shadow: #000 2px 2px;
       }
     </style>
-    <div class="window">
-      <div class="title">
-        <div class="buttons">
-          <div class="minimize">-</div>
-          <div class="close">&times;</div>
-        </div>
-        Main Page - HyperTextOS
-      </div>
-      <h1 style="text-align: center;">HyperTextOS</h1>
-      <p><b>HyperTextOS</b> is a tiny OS based in HTML, designed for people that don't like the modern internet. </p>
-      <h2>Features</h2>
-      <ul>
-        <li>Web browser</li>
-        <li>File editor</li>
-        <li>Custom CSS themes</li>
-        <li>3D Model Viewer</li>
-        <li>Markdown writer</li>
-      </ul>
-    </div><br>
-    <div class="window" id="minesweeper">
-      <div class="title" id="minesweeper-title">
-        <div class="buttons">
-          <div class="minimize">-</div>
-          <div class="close" id="minesweeper-close">&times;</div>
-        </div>
-        Test
-      </div>
-      AEAEAEAEA
-    </div>
   </body>
 </html>
