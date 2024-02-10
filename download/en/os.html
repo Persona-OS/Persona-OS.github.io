@@ -6,12 +6,59 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-      $()
+      $( function() {
+        $("#window1").draggable({
+          handle: "#title1"
+        })
+      });
     </script>
   </head>
   <body>
     <style>
+      body {
+        font-family: sans-serif;
+        background: teal;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
       
+      .window {
+        border: 1px solid gray;
+        background: antiquewhite;
+      }
+
+      .title {
+        background: gainsboro;
+        border-bottom: 1px solid gray;
+        height: 25px;
+      }
+      
+      .buttons {
+        float: right;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+      }
+      
+      .minimize{
+        border: 1px solid gray;
+        border-radius: 0 0 0 5px;
+        display: inline-block;
+        background: linear-gradient(gainsboro, silver);
+        width: 25px;
+      }
+      
+      .close {
+        border: 1px solid gray;
+        border-radius: 0 0 5px 0;
+        display: inline-block;
+        background: linear-gradient(red, darkred);
+        width: 25px;
+        color: #fff;
+        text-shadow: #000 2px 2px;
+      }
     </style>
   </body>
 </html>
